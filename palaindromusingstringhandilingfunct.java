@@ -11,13 +11,13 @@ public class Palindromusingstringhandilingfunct {
 		str1=in.nextLine();
 		
 		length=str1.length();
+	
 		for(int i=0;i<length;i++)
 			
 		{
  			rev =rev+str1.charAt(i);
  			
 		}
-		System.out.println(""+rev);
 		
 		if(str1.equals(rev)==true)
 		{
