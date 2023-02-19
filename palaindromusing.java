@@ -1,33 +1,26 @@
-import java.util.Scanner;
 
-public class Palindromusingstringhandilingfunct {
-	public static void main(String[] args)
-	{
-		Scanner in = new Scanner(System.in);
-		String str1,rev="";
-		int n,length;
-		System.out.println("Enter the string");
-		
-		str1=in.nextLine();
-		
-		length=str1.length();
-	
-		for(int i=0;i<length;i++)
-			
-		{
- 			rev =rev+str1.charAt(i);
- 			
-		}
-		
-		if(str1.equals(rev)==true)
-		{
-			System.out.println("It is palindrome"); 
-		}
-		else
-		{
-			System.out.println("Its is not palindrome");
-			
-		}
-
-}
+import java.util.*;
+class main
+{
+    public static void main(String[] args)
+    {
+        String str,rev="";
+        int length;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the sting");
+        str=sc.nextLine();
+         length =str.length();
+         for( int i=length-1;i>=0;i--)
+         {
+             rev=rev+str.charAt(i);
+         }
+         if(str.equals(rev))
+         {
+             System.out.println("Palindrome");
+         }
+         else
+         {
+             System.out.println("The given string is not palindrome");
+         }
+    }
 }
